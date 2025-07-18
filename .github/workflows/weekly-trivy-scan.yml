@@ -64,8 +64,12 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "_Full report is uploaded as an artifact._" >> $GITHUB_STEP_SUMMARY
 
+      - name: Sanitize repo name
+        id: sanitize
+        run: echo "repo_safe=${{ matrix.repo }}" | sed 's/\//-/g' >> $GITHUB_OUTPUT
+
       - name: Upload full Trivy text report
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: trivy-report-${{ matrix.repo }}-${{ matrix.sha }}
+          name: trivy-report-${{ steps.sanitize.outputs.repo_safe }}-${{ matrix.sha }}
           path: trivy-report.txt
