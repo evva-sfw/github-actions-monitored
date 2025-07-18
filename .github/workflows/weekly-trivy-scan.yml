@@ -51,3 +51,21 @@ jobs:
         with:
           sarif_file: trivy-report.sarif
           category: ${{ matrix.repo }}-${{ matrix.sha }}
+
+      - name: Generate Trivy text report
+        run: |
+          trivy fs ./repo --format table --output trivy-report.txt || true
+
+      - name: Add Trivy summary to GitHub Actions UI
+        run: |
+          echo "### Trivy Scan Summary for \`${{ matrix.repo }}-${{ matrix.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat trivy-report.txt >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "_Full report is uploaded as an artifact._" >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload full Trivy text report
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: trivy-report-${{ matrix.repo }}-${{ matrix.sha }}
+          path: trivy-report.txt
