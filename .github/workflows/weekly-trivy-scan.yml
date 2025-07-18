@@ -1,0 +1,50 @@
+name: Weekly Trivy Scan
+
+on:
+  schedule:
+    - cron: '25 4 * * 1'  # Every Monday at 04:25 UTC
+  workflow_dispatch:
+
+jobs:
+  generate-matrix:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Read repo/sha matrix from JSON
+        id: set-matrix
+        run: |
+          MATRIX=$(jq -c . .github/allowed-actions.json)
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+
+  scan:
+    needs: generate-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJSON(needs.generate-matrix.outputs.matrix) }}
+    permissions:
+      contents: read
+      security-events: write  # Required to upload SARIF to GitHub
+    steps:
+      - name: Checkout ${{ matrix.repo }} at ${{ matrix.sha }}
+        run: |
+          git clone https://github.com/${{ matrix.repo }} repo
+          cd repo
+          git checkout ${{ matrix.sha }}
+
+      - name: Run Trivy filesystem scan (SARIF)
+        uses: aquasecurity/trivy-action@76071ef0d7ec797419534a183b498b4d6366cf37 # v0.31.0
+        with:
+          scan-type: fs
+          scan-ref: ./repo
+          format: sarif
+          output: trivy-report.sarif
+
+      - name: Upload Trivy SARIF to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@86b04fb0e47484f7282357688f21d5d0e32175fe
+        with:
+          sarif_file: trivy-report.sarif

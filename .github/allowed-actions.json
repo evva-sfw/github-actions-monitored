@@ -1,0 +1,12 @@
+{
+  "include": [
+    { "repo": "aquasecurity/trivy-action", "sha": "76071ef0d7ec797419534a183b498b4d6366cf37", "version": "v0.31.0" },
+    { "repo": "iarekylew00t/verified-bot-commit", "sha": "5bf6deea87e11b5f1befadad84f003f4aae4c6a0", "version": "v1.4.0" },
+    { "repo": "sigstore/cosign-installer", "sha": "d58896d6a1865668819e1d91763c7751a165e159", "version": "v3.9.2" },
+    { "repo": "step-security/harden-runner", "sha": "002fdce3c6a235733a90a27c80493a3241e56863", "version": "v2.13.0" },
+    { "repo": "flutter-actions/setup-flutter", "sha": "03a3a60436d95e16d110127785240139a633ce70", "version": "v4.0" },
+    { "repo": "axi92/setup-android", "sha": "e7f44063751ace5bd330c5a01cf61819135b460e", "version": "-" },
+    { "repo": "evva-sfw/setup-swift", "sha": "56b13d55f46209a4c8eec66deeb191a571c84b23", "version": "" },
+    { "repo": "irgaly/xcode-cache", "sha": "bfac98e3b3325d8326505f899f6688663c99ad2c", "version": "v1.9.1" }
+  ]
+}
