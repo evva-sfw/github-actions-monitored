@@ -27,7 +27,7 @@ jobs:
             echo "### Allowed Repositories for Trivy Scan"
             echo ""
             echo "| Action | Version |"
-            echo "|------------|-----|"
+            echo "|------------|-----|-----|"
             echo "| all actions created by github itself | * |"
             jq -r '.include[] | "| \(.repo)@\(.sha) | \(.version) | ![Latest](https://img.shields.io/github/v/release/\(.repo)) |"' .github/allowed-actions.json
             echo ""
@@ -35,7 +35,7 @@ jobs:
             echo ""
             echo "$BQ"
             echo "| Action | Version |"
-            echo "|------------|-----|"
+            echo "|------------|-----|-----|"
             echo "| all actions created by github itself | * |"
             jq -r '.include[] | "| \(.repo)@\(.sha) | \(.version) | ![Latest](https://img.shields.io/github/v/release/\(.repo)) |"' .github/allowed-actions.json
             echo "$BQ"
