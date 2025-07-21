@@ -55,7 +55,7 @@ jobs:
       - name: Generate Trivy text report
         id: trivy_status
         run: |
-          trivy fs ./repo --format table --output trivy-report.txt
+          trivy fs ./repo --format table --output trivy-report.txt --exit-code 1
           echo "exit_code=$?" >> $GITHUB_OUTPUT
         continue-on-error: true # this stage can fail when trivy finds issues, save exit_code for later
 
