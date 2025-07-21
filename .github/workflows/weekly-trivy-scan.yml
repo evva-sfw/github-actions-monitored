@@ -53,8 +53,11 @@ jobs:
           category: ${{ matrix.repo }}-${{ matrix.sha }}
 
       - name: Generate Trivy text report
+        id: trivy_status
         run: |
-          trivy fs ./repo --format table --output trivy-report.txt || true
+          trivy fs ./repo --format table --output trivy-report.txt
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true # this stage can fail when trivy finds issues, save exit_code for later
 
       - name: Add Trivy summary to GitHub Actions UI
         run: |
@@ -77,3 +80,9 @@ jobs:
         with:
           name: trivy-report-${{ steps.sanitize.outputs.repo_safe }}-${{ matrix.sha }}
           path: trivy-report.txt
+
+      - name: Fail if Trivy found issues
+        if: steps.trivy_status.outputs.exit_code != '0'
+        run: |
+          echo "❌ Trivy found vulnerabilities. Failing the job."
+          exit 1
