@@ -29,7 +29,7 @@ jobs:
             echo "| Action | Version |"
             echo "|------------|-----|"
             echo "| all actions created by github itself | * |"
-            jq -r '.include[] | "| \(.repo)@\(.sha) | \(.version) |"' .github/allowed-actions.json
+            jq -r '.include[] | "| \(.repo)@\(.sha) | \(.version) | ![Latest](https://img.shields.io/github/v/release/\(.repo)) |"' .github/allowed-actions.json
             echo ""
             echo "### Copy as code:"
             echo ""
@@ -37,7 +37,7 @@ jobs:
             echo "| Action | Version |"
             echo "|------------|-----|"
             echo "| all actions created by github itself | * |"
-            jq -r '.include[] | "| \(.repo)@\(.sha) | \(.version) |"' .github/allowed-actions.json
+            jq -r '.include[] | "| \(.repo)@\(.sha) | \(.version) | ![Latest](https://img.shields.io/github/v/release/\(.repo)) |"' .github/allowed-actions.json
             echo "$BQ"
             echo ""
             echo "### Copy for policy text field"
