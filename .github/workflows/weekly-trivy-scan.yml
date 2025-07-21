@@ -20,9 +20,7 @@ jobs:
         run: |
           MATRIX=$(jq -c . .github/allowed-actions.json)
           echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
-      - name: Output to copy for allowed actions/checkout
-        run: jq -r '.include[] | "\(.repo)@\(.sha),"' .github/allowed-actions.json
-      - name: Output Markdown table of repo matrix
+      - name: Output Markdown
         run: |
           BQ='```'
           {
@@ -38,6 +36,12 @@ jobs:
             echo "| Repository | SHA |"
             echo "|------------|-----|"
             jq -r '.include[] | "| \(.repo) | \(.sha) |"' .github/allowed-actions.json
+            echo "$BQ"
+            echo ""
+            echo "### Copy for policy text field"
+            echo ""
+            echo "$BQ"
+            jq -r '.include[] | "\(.repo)@\(.sha),"' .github/allowed-actions.json
             echo "$BQ"
           } >> $GITHUB_STEP_SUMMARY
 
