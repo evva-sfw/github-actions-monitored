@@ -24,6 +24,7 @@ jobs:
         run: jq -r '.include[] | "\(.repo)@\(.sha),"' .github/allowed-actions.json
       - name: Output Markdown table of repo matrix
         run: |
+          BQ='```'
           {
             echo "### Allowed Repositories for Trivy Scan"
             echo ""
@@ -33,11 +34,11 @@ jobs:
             echo ""
             echo "### Copy as code:"
             echo ""
-            echo "```"
+            echo "$BQ"
             echo "| Repository | SHA |"
             echo "|------------|-----|"
             jq -r '.include[] | "| \(.repo) | \(.sha) |"' .github/allowed-actions.json
-            echo "```"
+            echo "$BQ"
           } >> $GITHUB_STEP_SUMMARY
 
   scan:
