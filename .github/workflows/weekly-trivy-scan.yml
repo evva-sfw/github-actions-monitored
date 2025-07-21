@@ -56,7 +56,8 @@ jobs:
         id: trivy_status
         run: |
           trivy fs ./repo --format table --output trivy-report.txt --exit-code 1
-          echo "exit_code=$?" >> $GITHUB_OUTPUT
+          code=$?
+          echo "exit_code=$code" >> $GITHUB_OUTPUT
         continue-on-error: true # this stage can fail when trivy finds issues, save exit_code for later
 
       - name: Add Trivy summary to GitHub Actions UI
