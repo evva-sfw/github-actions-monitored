@@ -22,6 +22,23 @@ jobs:
           echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
       - name: Output to copy for allowed actions/checkout
         run: jq -r '.include[] | "\(.repo)@\(.sha),"' .github/allowed-actions.json
+      - name: Output Markdown table of repo matrix
+        run: |
+          {
+            echo "### Allowed Repositories for Trivy Scan"
+            echo ""
+            echo "| Repository | SHA |"
+            echo "|------------|-----|"
+            jq -r '.include[] | "| \(.repo) | \(.sha) |"' .github/allowed-actions.json
+            echo ""
+            echo "### Copy as code:"
+            echo ""
+            echo "```"
+            echo "| Repository | SHA |"
+            echo "|------------|-----|"
+            jq -r '.include[] | "| \(.repo) | \(.sha) |"' .github/allowed-actions.json
+            echo "```"
+          } >> $GITHUB_STEP_SUMMARY
 
   scan:
     needs: generate-matrix
