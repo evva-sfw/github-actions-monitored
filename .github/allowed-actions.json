@@ -8,6 +8,6 @@
     { "repo": "axi92/setup-android", "sha": "e7f44063751ace5bd330c5a01cf61819135b460e", "version": "" },
     { "repo": "evva-sfw/setup-swift", "sha": "56b13d55f46209a4c8eec66deeb191a571c84b23", "version": "" },
     { "repo": "irgaly/xcode-cache", "sha": "bfac98e3b3325d8326505f899f6688663c99ad2c", "version": "v1.9.1" },
-    { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": ""
+    { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" }
   ]
 }
