@@ -8,6 +8,8 @@ on:
     branches:
       - main
 
+permissions: {}
+
 jobs:
   validate-json:
     runs-on: ubuntu-latest
