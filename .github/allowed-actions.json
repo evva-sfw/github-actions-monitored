@@ -8,6 +8,10 @@
     { "repo": "axi92/setup-android", "sha": "34e6dbfe3068cc329af70d3654e878348f6b9375", "version": "" },
     { "repo": "evva-sfw/setup-swift", "sha": "56b13d55f46209a4c8eec66deeb191a571c84b23", "version": "" },
     { "repo": "irgaly/xcode-cache", "sha": "bfac98e3b3325d8326505f899f6688663c99ad2c", "version": "v1.9.1" },
-    { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" }
+    { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" },
+    { "repo": "docker/login-action", "sha": "184bdaa0721073962dff0199f1fb9940f07167d1", "version": "v3.5.0" },
+    { "repo": "docker/setup-buildx-action", "sha": "e468171a9de216ec08956ac3ada2f0791b6bd435", "version": "v3.11.1" },
+    { "repo": "docker/metadata-action", "sha": "c1e51972afc2121e065aed6d45c65596fe445f3f", "version": "v5.8.0" },
+    { "repo": "docker/build-push-action", "sha": "263435318d21b8e681c14492fe198d362a7d2c83", "version": "v6.18.0" }
   ]
 }
