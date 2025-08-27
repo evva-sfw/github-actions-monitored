@@ -3,15 +3,15 @@
     { "repo": "aquasecurity/trivy-action", "sha": "76071ef0d7ec797419534a183b498b4d6366cf37", "version": "v0.31.0" },
     { "repo": "iarekylew00t/verified-bot-commit", "sha": "5bf6deea87e11b5f1befadad84f003f4aae4c6a0", "version": "v1.4.0" },
     { "repo": "sigstore/cosign-installer", "sha": "d58896d6a1865668819e1d91763c7751a165e159", "version": "v3.9.2" },
-    { "repo": "step-security/harden-runner", "sha": "002fdce3c6a235733a90a27c80493a3241e56863", "version": "v2.13.0" },
     { "repo": "flutter-actions/setup-flutter", "sha": "03a3a60436d95e16d110127785240139a633ce70", "version": "v4.0" },
-    { "repo": "axi92/setup-android", "sha": "34e6dbfe3068cc329af70d3654e878348f6b9375", "version": "" },
-    { "repo": "evva-sfw/setup-swift", "sha": "56b13d55f46209a4c8eec66deeb191a571c84b23", "version": "" },
+    { "repo": "axi92/setup-android", "sha": "fc37de7fe6b46d3f9bec203b4965d6d56da485b4", "version": "0.0.1" },
+    { "repo": "evva-sfw/setup-swift", "sha": "376f89cd5a71db507594ce1223b099d53c233c6f", "version": "0.0.1" },
     { "repo": "irgaly/xcode-cache", "sha": "bfac98e3b3325d8326505f899f6688663c99ad2c", "version": "v1.9.1" },
     { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" },
     { "repo": "docker/login-action", "sha": "184bdaa0721073962dff0199f1fb9940f07167d1", "version": "v3.5.0" },
     { "repo": "docker/setup-buildx-action", "sha": "e468171a9de216ec08956ac3ada2f0791b6bd435", "version": "v3.11.1" },
     { "repo": "docker/metadata-action", "sha": "c1e51972afc2121e065aed6d45c65596fe445f3f", "version": "v5.8.0" },
-    { "repo": "docker/build-push-action", "sha": "263435318d21b8e681c14492fe198d362a7d2c83", "version": "v6.18.0" }
+    { "repo": "docker/build-push-action", "sha": "263435318d21b8e681c14492fe198d362a7d2c83", "version": "v6.18.0" },
+    { "repo": "amannn/action-semantic-pull-request", "sha": "48f256284bd46cdaab1048c3721360e808335d50", "version": "v6.1.1" }
   ]
 }
