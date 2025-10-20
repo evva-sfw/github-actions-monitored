@@ -12,6 +12,7 @@
     { "repo": "docker/setup-buildx-action", "sha": "e468171a9de216ec08956ac3ada2f0791b6bd435", "version": "v3.11.1" },
     { "repo": "docker/metadata-action", "sha": "c1e51972afc2121e065aed6d45c65596fe445f3f", "version": "v5.8.0" },
     { "repo": "docker/build-push-action", "sha": "263435318d21b8e681c14492fe198d362a7d2c83", "version": "v6.18.0" },
-    { "repo": "amannn/action-semantic-pull-request", "sha": "48f256284bd46cdaab1048c3721360e808335d50", "version": "v6.1.1" }
+    { "repo": "amannn/action-semantic-pull-request", "sha": "48f256284bd46cdaab1048c3721360e808335d50", "version": "v6.1.1" },
+    { "repo": "dima-engineer/netbird-connect", "sha": "314b4fdaa994c86ea16a30fa674ea28c1e63624f", "version": "v1.1" }
   ]
 }
