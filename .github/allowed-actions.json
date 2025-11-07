@@ -1,7 +1,7 @@
 {
   "include": [
     { "repo": "aquasecurity/trivy-action", "sha": "76071ef0d7ec797419534a183b498b4d6366cf37", "version": "v0.31.0" },
-    { "repo": "iarekylew00t/verified-bot-commit", "sha": "5bf6deea87e11b5f1befadad84f003f4aae4c6a0", "version": "v1.4.0" },
+    { "repo": "iarekylew00t/verified-bot-commit", "sha": "68c52beb4042b7038cf40c4daf6e469f118c686b", "version": "v2.0.5" },
     { "repo": "sigstore/cosign-installer", "sha": "d58896d6a1865668819e1d91763c7751a165e159", "version": "v3.9.2" },
     { "repo": "flutter-actions/setup-flutter", "sha": "03a3a60436d95e16d110127785240139a633ce70", "version": "v4.0" },
     { "repo": "axi92/setup-android", "sha": "fc37de7fe6b46d3f9bec203b4965d6d56da485b4", "version": "0.0.1" },
