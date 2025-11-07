@@ -50,6 +50,7 @@ jobs:
             echo "$BQ"
             jq -r '.include[] | "\(.repo)@\(.sha),"' .github/allowed-actions.json
             echo "$BQ"
+            echo "[Copy and replace above actions into Enterprise Settings for allowed actions](https://evva.ghe.com/enterprises/evva/settings/actions)"
           } >> $GITHUB_STEP_SUMMARY
 
   scan:
