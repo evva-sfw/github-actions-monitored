@@ -1,17 +1,16 @@
 {
   "include": [
-    { "repo": "aquasecurity/trivy-action", "sha": "76071ef0d7ec797419534a183b498b4d6366cf37", "version": "v0.31.0" },
-    { "repo": "iarekylew00t/verified-bot-commit", "sha": "5b66c3d7b0a381748190f41c71bf3ff8128e8e76", "version": "v2.1.4" },
-    { "repo": "sigstore/cosign-installer", "sha": "d58896d6a1865668819e1d91763c7751a165e159", "version": "v3.9.2" },
-    { "repo": "flutter-actions/setup-flutter", "sha": "03a3a60436d95e16d110127785240139a633ce70", "version": "v4.0" },
-    { "repo": "SwiftyLab/setup-swift", "sha": "4bbb093f8c68d1dee1caa8b67c681a3f8fe70a91", "version": "v1.12.0" },
-    { "repo": "irgaly/xcode-cache", "sha": "4141f139f00e335c6e1031fb93e667181f86146f", "version": "v1.9.2" },
-    { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" },
-    { "repo": "docker/login-action", "sha": "c94ce9fb468520275223c153574b00df6fe4bcc9", "version": "v3.7.0" },
-    { "repo": "docker/setup-buildx-action", "sha": "8d2750c68a42422c14e847fe6c8ac0403b4cbd6f", "version": "v3.12.0" },
-    { "repo": "docker/metadata-action", "sha": "c299e40c65443455700f0fdfc63efafe5b349051", "version": "v5.10.0" },
-    { "repo": "docker/build-push-action", "sha": "10e90e3645eae34f1e60eeb005ba3a3d33f178e8", "version": "v6.19.2" },
     { "repo": "amannn/action-semantic-pull-request", "sha": "48f256284bd46cdaab1048c3721360e808335d50", "version": "v6.1.1" },
-    { "repo": "sigstore/cosign-installer", "sha": "faadad0cce49287aee09b3a48701e75088a2c6ad", "version": "v4.0.0" }
+    { "repo": "aquasecurity/trivy-action", "sha": "57a97c7e7821a5776cebc9bb87c984fa69cba8f1", "version": "v0.35.0" },
+    { "repo": "axi92/flutter-action", "sha": "72633a794ba0b23276fa4fc465a6cacb758a90c5", "version": "" },
+    { "repo": "docker/build-push-action", "sha": "d08e5c354a6adb9ed34480a06d141179aa583294", "version": "v7.0.0" },
+    { "repo": "docker/login-action", "sha": "4907a6ddec9925e35a0a9e82d7399ccc52663121", "version": "v4.1.0" },
+    { "repo": "docker/metadata-action", "sha": "030e881283bb7a6894de51c315a6bfe6a94e05cf", "version": "v6.0.0" },
+    { "repo": "docker/setup-buildx-action", "sha": "4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd", "version": "v4.0.0 " },
+    { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" },
+    { "repo": "iarekylew00t/verified-bot-commit", "sha": "4aeee0954ea68e4e91e5fd326e9a0827ebc5b19a", "version": "v2.2.2" },
+    { "repo": "irgaly/xcode-cache", "sha": "4141f139f00e335c6e1031fb93e667181f86146f", "version": "v1.9.2" },
+    { "repo": "sigstore/cosign-installer", "sha": "cad07c2e89fa2edd6e2d7bab4c1aa38e53f76003", "version": "v4.1.1" },
+    { "repo": "SwiftyLab/setup-swift", "sha": "86a5d3b9cffda409de636eb5f63f3f5696fdbe36", "version": "v1.13.0" }
   ]
 }
