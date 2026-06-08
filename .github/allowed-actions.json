@@ -3,7 +3,7 @@
     { "repo": "amannn/action-semantic-pull-request", "sha": "48f256284bd46cdaab1048c3721360e808335d50", "version": "v6.1.1" },
     { "repo": "aquasecurity/trivy-action", "sha": "ed142fd0673e97e23eac54620cfb913e5ce36c25", "version": "v0.36.0" },
     { "repo": "axi92/flutter-action", "sha": "72633a794ba0b23276fa4fc465a6cacb758a90c5", "version": "" },
-    { "repo": "anthropics/claude-code-action", "sha": "c3d45e8e941e1b2ad7b278c57482d9c5bf1f35b3", "version": "v1" },
+    { "repo": "anthropics/claude-code-action", "sha": "fbda2eb1bdc90d319b8d853f5deb53bca199a7c1", "version": "v1.0.140" },
     { "repo": "docker/build-push-action", "sha": "bcafcacb16a39f128d818304e6c9c0c18556b85f", "version": "v7.1.0" },
     { "repo": "docker/login-action", "sha": "4907a6ddec9925e35a0a9e82d7399ccc52663121", "version": "v4.1.0" },
     { "repo": "docker/metadata-action", "sha": "030e881283bb7a6894de51c315a6bfe6a94e05cf", "version": "v6.0.0" },
