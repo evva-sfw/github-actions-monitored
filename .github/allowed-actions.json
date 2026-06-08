@@ -9,7 +9,7 @@
     { "repo": "docker/metadata-action", "sha": "80c7e94dd9b9319bd5eb7a0e0fe9291e23a2a2e9", "version": "v6.1.0" },
     { "repo": "docker/setup-buildx-action", "sha": "d7f5e7f509e45cec5c76c4d5afdd7de93d0b3df5", "version": "v4.1.0 " },
     { "repo": "evva-sfw/workflows", "sha": "bc323490730128e914068868fe76a82726c26de6", "version": "" },
-    { "repo": "iarekylew00t/verified-bot-commit", "sha": "126a6a11889ab05bcff72ec2403c326cd249b84c", "version": "v2.3.0" },
+    { "repo": "iarekylew00t/verified-bot-commit", "sha": "5b4e8852dc472093935b8debcb81459bb79f7986", "version": "v2.3.2" },
     { "repo": "irgaly/xcode-cache", "sha": "4141f139f00e335c6e1031fb93e667181f86146f", "version": "v1.9.2" },
     { "repo": "oven-sh/setup-bun", "sha": "0c5077e51419868618aeaa5fe8019c62421857d6", "version": "v2.2.0" },
     { "repo": "sigstore/cosign-installer", "sha": "cad07c2e89fa2edd6e2d7bab4c1aa38e53f76003", "version": "v4.1.1" },
